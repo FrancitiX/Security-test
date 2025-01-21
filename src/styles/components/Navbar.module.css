@@ -1,0 +1,64 @@
+.header {
+
+    padding: 0 100px;
+    box-shadow: 0 0 10px var(--shadow);
+}
+
+.header a,
+.header Link {
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.header a:hover:not(.name) {
+    color: var(--specialText);
+}
+
+.nav {
+    height: 50px;
+}
+
+.nav,
+.left_section a,
+.right_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_section a {
+    gap: 10px;
+}
+
+.right_section {
+    gap: 30px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.logo,
+.user {
+    filter: drop-shadow(0 0 5px var(--shadow));
+    overflow: hidden;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+}
+
+.logo img,
+.user img {
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.user {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}

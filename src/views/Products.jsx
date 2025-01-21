@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 
-function Product() {
+function Products() {
   return (
     <>
       <Navbar />
-      <div>Producto</div>
+      <div>Productos</div>
     </>
   );
 }
 
-export default Product;
+export default Products;
