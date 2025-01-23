@@ -25,7 +25,7 @@
 }
 
 .card_image img {
-    width: 50%;
+    width: 60%;
     object-fit: contain;
 }
 
@@ -38,19 +38,16 @@
 
 .product_info {
     height: 100px;
+    overflow: hidden;
 }
 
 .product_name {
     margin: 0;
+    height: 100%;
     text-align: center;
+    text-overflow: ellipsis;
     font-size: 15px;
     font-weight: 600;
-}
-
-.product_short {
-    font-size: 12px;
-    height: 70px;
-    margin-bottom: 0;
 }
 
 .price_container {

@@ -19,9 +19,12 @@ function Navbar() {
             <h1 className={styles.title}>Digiwer</h1>
           </Link>
         </div>
-        <div className={styles.center_section}>Buscar</div>
+
         <div className={styles.right_section}>
-          <Link to="/products">Categorias</Link>
+          <div className={styles.center_section}>
+            <input type="text" placeholder="buscar" />
+          </div>
+          <Link to="/filter">Categorias</Link>
           <Link to="/about">Sobre nosotros</Link>
           <Link to="/my-cart">
             <span className="material-symbols-outlined">shopping_cart</span>

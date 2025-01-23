@@ -1,0 +1,45 @@
+
+.main {
+    margin: 30px 0;
+}
+
+.mid {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.filter {
+    padding: 0px;
+    width: 200px;
+    min-width: 50px;
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.filter h3 {
+    margin: auto 20px;
+}
+
+.filter button {
+    width: 100%;
+    padding: 20px;
+}
+
+.separator {
+    width: 100%;
+    border: 1px solid var(--text);
+}
+
+.products_extra {
+    padding: 20px 0;
+}
+
+.products_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    background: var(--bgColor2);
+    row-gap: 10px;
+}

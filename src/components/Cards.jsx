@@ -16,7 +16,6 @@ function CardDefault(producto) {
       <div className={styles.card_info}>
         <Link to="/product" className={styles.product_info}>
           <p className={styles.product_name}>{product.name}</p>
-          <p className={styles.product_short}>{product.short_description}</p>
         </Link>
         <div className={styles.price_container}>
           <button>

@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import styles from "./../styles/Home.module.css";
 import { MiniCard, CardDefault } from "../components/Cards";
 import { productos } from "../utils/productos";
+import { Link } from "react-router-dom";
 
 function Home() {
   const images = [
@@ -45,6 +46,20 @@ function Home() {
           <div className={styles.products_container}>
             {productos
               .sort((a, b) => a.price - b.price)
+              .slice(0, 5)
+              .map((item, index) => (
+                <CardDefault key={index} producto={item} />
+              ))}
+          </div>
+        </section>
+        <section className="container">
+        <div className={styles.history_title}>
+            <h3>Todos los productos</h3>  
+            <Link to="/products">ver todo</Link>
+          </div>
+          <div className={styles.products_container}>
+            {productos
+              .sort()
               .slice(0, 5)
               .map((item, index) => (
                 <CardDefault key={index} producto={item} />

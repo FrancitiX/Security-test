@@ -8,6 +8,7 @@ import Products from "./views/Products";
 import Product from "./views/Product";
 import About from "./views/About";
 import Cart from "./views/Cart";
+import Filter from "./views/Filter";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/about" element={<About />} />
         <Route path="/my-cart" element={<Cart />} />
+        <Route path="/filter" element={<Filter />} />
       </Routes>
     </Router>
   );
