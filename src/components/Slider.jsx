@@ -4,6 +4,13 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 
 function Slider({ data }) {
+  const customRenderItem = (item) => (
+    <img
+      src={item.original}
+      alt=""
+      style={{ objectFit: "cover", width: "100%", height: "55vh" }}
+    />
+  );
   return (
     <div className={styles.slider_container}>
       <ImageGallery
@@ -12,6 +19,8 @@ function Slider({ data }) {
         showFullscreenButton={false}
         showThumbnails={false}
         showBullets={true}
+        autoPlay={true}
+        renderItem={customRenderItem}
       />
     </div>
   );

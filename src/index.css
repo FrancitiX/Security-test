@@ -34,7 +34,7 @@ body {
 :root {
   --bgColor: rgb(250, 253, 255);
   --bgColor2: rgb(235, 238, 240);
-  --bgColor3: rgb(110, 150, 220);
+  --bgColor3: rgb(71, 126, 220);
 
   --text: rgb(20, 20, 20);
   --text2: rgb(240, 240, 240);
@@ -57,7 +57,7 @@ body {
 [data-theme="dark"] {
   --bgColor: rgb(20, 20, 20);
   --bgColor2: rgb(25, 25, 25);
-  --bgColor3: rgb(90, 130, 200);
+  --bgColor3: rgb(71, 126, 220);
 
   --text: rgb(245, 245, 245);
   --text2: rgb(20, 20, 20);

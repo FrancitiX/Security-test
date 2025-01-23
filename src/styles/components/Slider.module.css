@@ -1,12 +1,10 @@
 
 .slider_container {
-    margin: auto;
-    width: 700px;
-    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ff0000;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 10px var(--shadow2);
     overflow: hidden;
     border-radius: 10px;
 }

@@ -1,13 +1,13 @@
 .header {
-
     padding: 0 100px;
+    background: var(--bgColor3);
     box-shadow: 0 0 10px var(--shadow);
 }
 
 .header a,
 .header Link {
     font-weight: 500;
-    color: var(--text);
+    color: var(--text2);
     text-decoration: none;
 }
 

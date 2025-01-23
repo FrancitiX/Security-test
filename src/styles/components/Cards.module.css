@@ -1,0 +1,84 @@
+.card_container {
+    position: relative;
+    background: var(--bgColor);
+    border: 1px solid rgba(55, 55, 55, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card_container a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.card_container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px var(--shadow);
+    z-index: 20;
+}
+
+.card_image {
+    height: 210px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.card_image img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.card_info {
+    padding: 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product_info {
+    height: 100px;
+}
+
+.product_name {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.product_short {
+    font-size: 12px;
+    height: 70px;
+    margin-bottom: 0;
+}
+
+.price_container {
+    position: static;
+    bottom: 0;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price_container button {
+    padding: 5px 6px 2px;
+    color: rgb(255, 255, 255);
+    background: var(--bgColor3);
+    border: 1px solid var(--shadow);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price_container button:hover {
+    background: var(--specialText);
+    box-shadow: 0 0 10px var(--shadow);
+}
+
+.price_container h4 {
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--bgColor3);
+}
