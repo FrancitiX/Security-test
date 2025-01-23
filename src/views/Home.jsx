@@ -8,12 +8,12 @@ function Home() {
 
   const images = [
     {
-      id: 1,
-      image: "src/assets/GeForce-RTX-50.jpg",
+      original: "src/assets/GeForce-RTX-50.jpg",
+      thumbnail: "src/assets/GeForce-RTX-50.jpg",
     },
     {
-      id: 2,
-      image: "src/assets/AMD-Ryzen-7000.jpg",
+      original: "src/assets/AMD-Ryzen-7000.jpg",
+      thumbnail: "src/assets/AMD-Ryzen-7000.jpg",
     }
   ];
 

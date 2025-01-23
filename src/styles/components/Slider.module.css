@@ -1,37 +1,12 @@
-.slider_container {
-    padding: 0 200px;
-    position: relative;
-}
 
-.slider {
-    height: 60vh;
+.slider_container {
+    margin: auto;
+    width: 700px;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #0c7ef8;
-    border-radius: 20px;
+    background: #ff0000;
     overflow: hidden;
-    gap: 50px;
-}
-
-.slider img {
-    height: 100%;
-    width: auto;
-
-}
-
-.next,
-.before {
-    /* font-size: 40px; */
-    top: 50%;
-    position: absolute;
-    cursor: pointer;
-}
-
-.before {
-    left: 20px;
-}
-
-.next {
-    right: 20px;
+    border-radius: 10px;
 }
