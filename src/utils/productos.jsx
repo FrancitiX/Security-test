@@ -279,7 +279,6 @@ function filterProducts(products) {
   products.map((product) => {
     const price = parseInt(product.price.replace(/\D/g, "").slice(0, -2));
     product.price = price;
-    console.log(product.price);
   });
 
   return products;

@@ -8,7 +8,7 @@ function Slider({ data }) {
     <img
       src={item.original}
       alt=""
-      style={{ objectFit: "cover", width: "100%", height: "55vh" }}
+      style={{ objectFit: "contain", width: "100%", height: "70vh" }}
     />
   );
   return (

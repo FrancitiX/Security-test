@@ -18,11 +18,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/product/:productName" element={<Product />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/about" element={<About />} />
         <Route path="/my-cart" element={<Cart />} />
-        <Route path="/filter" element={<Filter />} />
+        <Route path="/filter/:category/:filtro" element={<Filter />} />
       </Routes>
     </Router>
   );

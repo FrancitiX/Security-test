@@ -1,0 +1,138 @@
+.fullContainer {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #0077b6, #00b4d8); */
+    background: linear-gradient(135deg, var(--bgColor), #00b4d8);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
+}
+
+.login_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login_Box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.login_Logo {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.loginTitle {
+    margin-bottom: 30px;
+    color: var(--specialText);
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.inputField {
+    width: 90%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #0077b6;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: #00b4d8;
+    background-color: #e0f7fa;
+    box-shadow: 0 0 8px rgba(0, 180, 216, 0.5);
+}
+
+
+.loginBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loginBtn:hover {
+    background-color: #00b4d8;
+    transform: translateY(-3px);
+}
+
+.loginBtn:active {
+    transform: translateY(0);
+}
+
+.registerLink {
+    width: 80%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #a0a0a0;
+}
+
+.registerLink a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.registerLink a:hover {
+    color: #00b4d8;
+    text-decoration: underline;
+}
+
+.slider {
+    overflow: hidden;
+    /* Oculta contenido fuera del contenedor */
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* Transición suave entre secciones */
+}
+
+.slide {
+    width: 100%;
+    /* Cada slide ocupa todo el ancho del slider */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
