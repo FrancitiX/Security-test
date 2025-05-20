@@ -1,0 +1,17 @@
+.footer {
+    flex-direction: column;
+    color: rgb(245, 245, 245);
+    background: rgb(105, 105, 105);
+}
+
+.first_section {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 20px;
+}
+
+
+.second_section {
+    margin-bottom: 10px;
+}
