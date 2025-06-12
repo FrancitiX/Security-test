@@ -10,12 +10,20 @@ import { Link } from "react-router-dom";
 function Home() {
   const images = [
     {
-      original: "src/assets/GeForce-RTX-50.jpg",
-      thumbnail: "src/assets/GeForce-RTX-50.jpg",
+      original: "src/assets/gallery/imagen02.jpg",
+      thumbnail: "src/assets/gallery/imagen02.jpg",
     },
     {
-      original: "src/assets/AMD-Ryzen-7000.jpg",
-      thumbnail: "src/assets/AMD-Ryzen-7000.jpg",
+      original: "src/assets/gallery/AMD-Ryzen-7000.jpg",
+      thumbnail: "src/assets/gallery/AMD-Ryzen-7000.jpg",
+    },
+    {
+      original: "src/assets/gallery/imagen01.jpg",
+      thumbnail: "src/assets/gallery/imagen01.jpg",
+    },
+    {
+      original: "src/assets/gallery/imagen03.jpg",
+      thumbnail: "src/assets/gallery/imagen03.jpg",
     },
   ];
 
