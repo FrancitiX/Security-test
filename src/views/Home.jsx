@@ -6,6 +6,8 @@ import styles from "./../styles/Home.module.css";
 import { MiniCard, CardDefault } from "../components/Cards";
 import { productos } from "../utils/productos";
 import { Link } from "react-router-dom";
+import MapComponent from "../APIs/Location";
+import PayPalButton from "../APIs/Paypal";
 
 function Home() {
   const images = [
@@ -61,8 +63,8 @@ function Home() {
           </div>
         </section>
         <section className="container">
-        <div className={styles.history_title}>
-            <h3>Todos los productos</h3>  
+          <div className={styles.history_title}>
+            <h3>Todos los productos</h3>
             <Link to="/products">ver todo</Link>
           </div>
           <div className={styles.products_container}>
@@ -88,6 +90,16 @@ function Home() {
               </div>
             )}
           </div>
+        </section>
+        <section className="container">
+          <MapComponent />
+        </section>
+        <section className="container">
+          <div>
+            <h3>Puedes pagar con</h3>
+          </div>
+          <PayPalButton total={10} />
+          <div></div>
         </section>
         <section className="container">
           <h3>Marcas</h3>

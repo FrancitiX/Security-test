@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^8.8.3",
     "@react-google-maps/api": "^2.20.6",
+    "axios": "^1.10.0",
     "bootstrap": "^5.3.6",
     "classnames": "^2.5.1",
     "playwright": "^1.53.0",
