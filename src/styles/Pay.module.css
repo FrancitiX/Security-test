@@ -1,0 +1,130 @@
+.main {
+    margin-top: 10px;
+    background-color: var(--bgColor);
+    min-height: 100dvh;
+}
+
+.main a {
+    text-decoration: none;
+    color: var(--specialText3);
+}
+
+.payContainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+    background-color: var(--bgColor);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.payContainer .payDetails {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.noButton {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bgColor);
+    border: none;
+    cursor: pointer;
+}
+
+.noButton:hover {
+    color: var(--specialText3);
+}
+
+.subtitle {
+    margin: 0;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.payMethodsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.productContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.features {
+    margin-top: 30px;
+}
+
+.productImageContainer {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.productImageContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.payContainer .resume {
+    width: 30%;
+}
+
+.horizontalLine {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subprice {
+    font-size: 1.2rem;
+    color: var(--text3);
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: var(--specialText3);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.buyButton {
+    width: 100%;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #1e88e5;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.buyButton:hover {
+    background-color: #1565c0;
+}

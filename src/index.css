@@ -26,6 +26,10 @@ body {
   justify-content: center;
 }
 
+.mt_first {
+  margin-top: 210px;
+}
+
 .container {
   padding: 0 100px;
   min-height: 30vh;
@@ -34,13 +38,14 @@ body {
 :root {
   --bgColor: rgb(250, 253, 255);
   --bgColor2: rgb(235, 238, 240);
-  --bgColor3: rgb(71, 126, 220);
+  --bgColor3: rgb(83, 143, 203);
 
   --text: rgb(20, 20, 20);
   --text2: rgb(240, 240, 240);
   --text3: rgba(50, 50, 50, 0.5);
   --specialText: rgb(140, 200, 255);
   --specialtext2: rgb(0, 0, 0);
+  --specialText3 : rgb(30, 136, 229);
 
   --detail: rgba(40, 40, 40);
   --detail2: rgba(100, 100, 100);

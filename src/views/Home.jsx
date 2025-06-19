@@ -6,16 +6,26 @@ import styles from "./../styles/Home.module.css";
 import { MiniCard, CardDefault } from "../components/Cards";
 import { productos } from "../utils/productos";
 import { Link } from "react-router-dom";
+import MapComponent from "../APIs/Location";
+import PayPalButton from "../APIs/Paypal";
 
 function Home() {
   const images = [
     {
-      original: "src/assets/GeForce-RTX-50.jpg",
-      thumbnail: "src/assets/GeForce-RTX-50.jpg",
+      original: "src/assets/gallery/imagen02.jpg",
+      thumbnail: "src/assets/gallery/imagen02.jpg",
     },
     {
-      original: "src/assets/AMD-Ryzen-7000.jpg",
-      thumbnail: "src/assets/AMD-Ryzen-7000.jpg",
+      original: "src/assets/gallery/AMD-Ryzen-7000.jpg",
+      thumbnail: "src/assets/gallery/AMD-Ryzen-7000.jpg",
+    },
+    {
+      original: "src/assets/gallery/imagen01.jpg",
+      thumbnail: "src/assets/gallery/imagen01.jpg",
+    },
+    {
+      original: "src/assets/gallery/imagen03.jpg",
+      thumbnail: "src/assets/gallery/imagen03.jpg",
     },
   ];
 
@@ -24,7 +34,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <main className={styles.main}>
+      <main className={`${styles.main}`}>
         <section className={styles.slider_container}>
           <div className={styles.slider}>
             <Slider data={images} />
@@ -53,8 +63,8 @@ function Home() {
           </div>
         </section>
         <section className="container">
-        <div className={styles.history_title}>
-            <h3>Todos los productos</h3>  
+          <div className={styles.history_title}>
+            <h3>Todos los productos</h3>
             <Link to="/products">ver todo</Link>
           </div>
           <div className={styles.products_container}>
@@ -80,6 +90,15 @@ function Home() {
               </div>
             )}
           </div>
+        </section>
+        <section className="container">
+          <MapComponent />
+        </section>
+        <section className="container">
+          <div>
+            <h3>Puedes pagar con</h3>
+          </div>
+          <PayPalButton total={0} />
         </section>
         <section className="container">
           <h3>Marcas</h3>

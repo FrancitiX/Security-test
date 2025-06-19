@@ -22,6 +22,7 @@ function Slider({ data }) {
         autoPlay={true}
         renderItem={customRenderItem}
       />
+
     </div>
   );
 }

@@ -9,10 +9,13 @@ import Product from "./views/Product";
 import About from "./views/About";
 import Cart from "./views/Cart";
 import Filter from "./views/Filter";
+import ScrollToTop from "./utils/scrollTop";
+import Pay from "./views/Pay";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -22,7 +25,8 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/about" element={<About />} />
         <Route path="/my-cart" element={<Cart />} />
-        <Route path="/filter/:category/:filtro" element={<Filter />} />
+        <Route path="/pay/cart/:productName" element={<Pay />} />
+        <Route path="/products/filter/:category/:filtro" element={<Filter />} />
       </Routes>
     </Router>
   );
