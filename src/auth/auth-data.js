@@ -11,13 +11,12 @@ const Admin = {
   "email": "admin@example.com",
   "cellphone": {
     "country": "MX",
-    "cellphone": "3312345678"
+    "cellphone": "3300000000"
   },
-  "salt": "",
 
-  "pass": "$2b$10$Hn9WvxSnrGcxWtJCE1hcDOVt4a8Q5tqzv2TY8vAwd/4Nuyt3DDJ5a", 
+  "pass": "Admin123", 
 
-  "type": "admin",
+  "type": "1",
   "date": {
     "date": "2025-06-17",
     "time": "15:30:00"

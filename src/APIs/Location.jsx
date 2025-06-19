@@ -9,7 +9,7 @@ const containerStyle = {
 
 export default function MapComponent() {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyDb7L4mKoCaaov6yolr0JxEYjnq1NGeUsc",
+    googleMapsApiKey: import.meta.env.VITE_MAPS_API_KEY,
   });
 
   if (loadError) return <div>Error cargando mapa</div>;

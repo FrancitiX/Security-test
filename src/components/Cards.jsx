@@ -10,11 +10,11 @@ function CardDefault(producto) {
 
   return (
     <div className={styles.card_container}>
-      <Link to="/product" className={`${styles.card_image} center`}>
+      <Link to={`/product/${product.name}`} className={`${styles.card_image} center`}>
         <img src={product.image} alt={product.name} />
       </Link>
       <div className={styles.card_info}>
-        <Link to="/product" className={styles.product_info}>
+        <Link to={`/product/${product.name}`} className={styles.product_info}>
           <p className={styles.product_name}>{product.name}</p>
         </Link>
         <div className={styles.price_container}>

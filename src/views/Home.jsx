@@ -34,7 +34,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <main className={styles.main}>
+      <main className={`${styles.main}`}>
         <section className={styles.slider_container}>
           <div className={styles.slider}>
             <Slider data={images} />
@@ -98,8 +98,7 @@ function Home() {
           <div>
             <h3>Puedes pagar con</h3>
           </div>
-          <PayPalButton total={10} />
-          <div></div>
+          <PayPalButton total={0} />
         </section>
         <section className="container">
           <h3>Marcas</h3>

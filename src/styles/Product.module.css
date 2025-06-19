@@ -1,0 +1,120 @@
+.main {
+    margin-top: 10px;
+    background-color: var(--bgColor);
+    min-height: 100dvh;
+}
+
+.productContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: var(--bgColor);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.imageContainer {
+    min-width: 300px;
+    min-height: 300px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    aspect-ratio: 1;
+    border-radius: 8px;
+}
+
+.detailsContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    text-wrap: wrap;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--specialtext2);
+}
+
+.price {
+    font-size: 1.5rem;
+    color: var(--specialText3);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.features li {
+    margin-bottom: 0.5rem;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.actions button {
+    width: 50%;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.buyButton {
+    text-decoration: none;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: var(--specialText3);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.buyButton:hover {
+    background: rgb(22, 103, 202);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.addCartButton {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: rgb(225, 190, 18);
+    color: rgb(240, 240, 240);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.addCartButton:hover {
+    color: white;
+    background: rgb(181, 154, 17);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.products_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    row-gap: 10px;
+}

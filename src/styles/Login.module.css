@@ -1,40 +1,42 @@
-.fullContainer {
+.background {
     margin: 0;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background: linear-gradient(135deg, #0077b6, #00b4d8); */
-    background: linear-gradient(135deg, var(--bgColor), #00b4d8);
+    background: linear-gradient(135deg, var(--bgColor), rgba(0, 126, 216, 0.8));
     background-size: 300% 300%;
     animation: gradientShift 10s ease infinite;
 }
 
-.login_Container {
+.form_Container {
+    height: 70dvh;
+    max-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
 }
 
-.login_Box {
-    background-color: #ffffff;
+.form_Box {
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    min-width: 330px;
+    width: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 380px;
+    color: var(--text);
+    background-color: var(--bgColor);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
     animation: slideUp 0.5s ease-in-out;
 }
 
-.login_Logo {
+.form_Logo {
     height: 100px;
     width: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 50px;
     overflow: hidden;
 }
@@ -44,28 +46,36 @@
     aspect-ratio: 1;
 }
 
-.loginTitle {
-    margin-bottom: 30px;
-    color: var(--specialText);
-    font-size: 28px;
-    font-weight: bold;
+.formTitle {
+    margin: 10px 0px 20px 0px;
+    font-size: 25px;
+    font-weight: 720;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    color: var(--specialText);
 }
 
-.inputField {
+.formInputs {
+    width: 100%;
+}
+
+.input {
     width: 90%;
-    padding: 12px;
-    margin: 15px 0;
-    border: 2px solid #0077b6;
-    border-radius: 6px;
-    background-color: #f1f1f1;
+    padding: 8px 10px;
+    margin: 12px 0;
+    border: 2px solid var(--specialText);
+    border-radius: 5px;
+    background: transparent;
     color: #333;
     font-size: 16px;
     transition: all 0.3s ease;
 }
 
-.inputField:focus {
+.inputPassword {
+    margin-bottom: 20px;
+}
+
+.input:focus {
     outline: none;
     border-color: #00b4d8;
     background-color: #e0f7fa;
