@@ -14,10 +14,10 @@ function Register() {
     if (step > 0) setStep(step - 1);
   };
   return (
-    <div className={styles.fullContainer}>
-      <div className={styles.login_Container}>
-        <div className={styles.login_Box}>
-          <div className={styles.login_Logo}>
+    <div className={styles.background}>
+      <div className={styles.form_Container}>
+        <div className={styles.form_Box}>
+          <div className={styles.form_Logo}>
             <img src={Logo} alt="Logo" className={styles.logo} />
           </div>
           <h2 className={styles.loginTitle}>Registrarse</h2>
