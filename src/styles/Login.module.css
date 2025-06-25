@@ -104,6 +104,18 @@
     transform: translateY(0);
 }
 
+.btnDisabled {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(134, 134, 134);
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
 .registerLink {
     width: 80%;
     margin-top: 10px;
@@ -126,23 +138,81 @@
 }
 
 .slider {
-    overflow: hidden;
-    /* Oculta contenido fuera del contenedor */
+    padding: 0;
     width: 100%;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
 }
 
-.slides {
+.sliderWrapper {
+    position: relative;
+    width: 100%;
     display: flex;
-    transition: transform 0.5s ease;
-    /* Transición suave entre secciones */
+    overflow: hidden;
+    gap: 30px;
 }
 
 .slide {
-    width: 100%;
-    /* Cada slide ocupa todo el ancho del slider */
+    flex: 1 0 100%;
+    padding: 1px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+}
+
+.doubleInput {
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cellphoneInput {
+    margin: 12px 0;
+    width: 96%;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid var(--specialText);
+    border-radius: 5px;
+}
+
+.countryCode {
+    font-size: 16px;
+    margin: 0;
+    width: 30%;
+    padding: 8px 10px;
+    border-right: 0px;
+    background: transparent;
+    border: none;
+}
+
+.inputcellphone {
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+    padding: 8px 10px;
+    background: transparent;
+    border: none;
+    border-left: 2px solid var(--specialText);
+    border-radius: 0px 5px 5px 0px;
+    transition: all 0.3s ease;
+}
+
+.countryCode:focus,
+.inputcellphone:focus {
+    outline: none;
+    border-color: rgb(0, 180, 216);
+    background: rgb(224, 247, 250);
+    box-shadow: 0 0 8px rgba(0, 180, 216, 0.5);
+}
+
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 80px;
 }
