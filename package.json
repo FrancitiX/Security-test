@@ -15,20 +15,11 @@
     "axios": "^1.10.0",
     "bootstrap": "^5.3.6",
     "classnames": "^2.5.1",
-<<<<<<< HEAD
-    "install": "^0.13.0",
-    "playwright": "^1.52.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-image-gallery": "^1.4.0",
-    "react-router-dom": "^7.6.0"
-=======
-    "playwright": "^1.53.0",
+    "playwright": "^1.53.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-image-gallery": "^1.4.0",
     "react-router-dom": "^7.6.2"
->>>>>>> 3d42ddd795134004bec67ddd61cffb30234548db
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
