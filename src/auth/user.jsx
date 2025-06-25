@@ -3,7 +3,7 @@ import { URI_back } from "./auth-data";
 
 async function createUser(formData) {
   try {
-    const response = await axios.post(`${URI_back}/createUser`, formData);
+    const response = await axios.post(`${URI_back}/newUser`, formData);
 
     return response.data.status;
   } catch (error) {
@@ -36,4 +36,4 @@ async function getUser() {
   }
 }
 
-export { getUser, login };
+export { createUser, getUser, login };
