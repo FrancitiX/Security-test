@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { CardDefault } from "../components/Cards";
 import { formatPrice } from "../utils/formats";
+import classNames from "classnames";
 
 function Product() {
   const { productName } = useParams();
@@ -17,7 +18,7 @@ function Product() {
   return (
     <>
       <Navbar />
-      <main className={styles.main}>
+      <main className={`${classNames(styles.main)} mt_Nav`}>
         <div className="container">
           <div className={styles.productContainer}>
             <div className={styles.imageContainer}>

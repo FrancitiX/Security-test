@@ -1,25 +1,30 @@
 .searchInput {
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    overflow: hidden;
+  height: 30px;
+  min-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .search {
-    height: 100%;
-    width: 200px;
-    text-align: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: var(--bgColor);
 }
 
 .search:focus {
-    outline: none;
+  outline: none;
 }
 
 .searchInput button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bgColor);
+  border: none;
+  cursor: pointer;
 }

@@ -34,7 +34,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <main className={`${styles.main}`}>
+      <main className={`${styles.main} mt_Nav`}>
         <section className={styles.slider_container}>
           <div className={styles.slider}>
             <Slider data={images} />

@@ -4,22 +4,20 @@ import styles from "./../styles/Products.module.css";
 import { CardDefault } from "../components/Cards";
 import { productos } from "../utils/productos";
 import Footer from "../components/Footer";
+import classNames from "classnames";
+import Filter from "../components/Filter";
 
 function Products() {
   return (
     <>
       <Navbar />
 
-      <main className={styles.main}>
-        <div className={`${styles.mid} container`}>
-          <section className={styles.filter}>
-            <h3>Filtros</h3>
-            <div className={styles.separator}></div>
-            <button>Precio</button>
-            <button>Marcas</button>
-            <button>categoria</button>
-          </section>
+      <main className={`${classNames(styles.main)} mt_Nav`}>
+        <div className={`${classNames(styles.mid, styles.container)}`}>
+          <Filter />
+          <div className={styles.copy}></div>
           <section className={styles.products_extra}>
+            <h3>Resultados</h3>
             <hr />
             <div className={styles.products_container}>
               {productos.map((item, index) => (

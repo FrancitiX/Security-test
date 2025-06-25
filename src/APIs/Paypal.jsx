@@ -1,12 +1,14 @@
 
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { useState } from "react";
 
 export default function PayPalButton({ total = 10 }) {
   const id = import.meta.env.VITE_PAYPAL_CLIENT_ID;
   console.log("CLIENT ID:", id);
+  const moneda = "MXN"
 
   return (
-    <PayPalScriptProvider options={{ "client-id": id }}>
+    <PayPalScriptProvider options={{ "client-id": id, currency: moneda, }}>
       <PayPalButtons
         style={{ layout: "vertical" }}
         createOrder={(data, actions) => {
@@ -15,6 +17,7 @@ export default function PayPalButton({ total = 10 }) {
               {
                 amount: {
                   value: total.toString(),
+                  currency_code: moneda,
                 },
               },
             ],

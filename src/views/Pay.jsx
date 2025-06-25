@@ -6,11 +6,13 @@ import { productos } from "../utils/productos";
 import { Link, useParams } from "react-router-dom";
 import { formatPrice } from "../utils/formats";
 import PayPalButton from "../APIs/Paypal";
+import classNames from "classnames";
 
 function Pay() {
   const { productName } = useParams();
   const decodedName = decodeURIComponent(productName);
   const product = productos.find((prod) => prod.name === decodedName);
+  const price = product.price;
 
   if (!product)
     return (
@@ -27,7 +29,7 @@ function Pay() {
     <>
       <Navbar />
 
-      <main className={styles.main}>
+      <main className={`${classNames(styles.main)} mt_Nav`}>
         <div className="container">
           <div className={styles.payContainer}>
             <div className={styles.payDetails}>
@@ -50,13 +52,13 @@ function Pay() {
                 <div>
                   <h3>Puedes pagar con</h3>
                 </div>
-                <PayPalButton total={10} />
+                <PayPalButton total={price} />
               </div>
 
               <div className={styles.productDetails}>
                 <h3>Detalles del producto</h3>
                 <div className={styles.productContainer}>
-                  <div className={styles.horizontalLine}>
+                  <div className={styles.horizontal}>
                     <div className={styles.productImageContainer}>
                       <img
                         src={product.image}
@@ -64,7 +66,7 @@ function Pay() {
                         className={styles.productImage}
                       />
                     </div>
-                    <h3>{product.name}</h3>
+                    <h3 className={styles.product}>{product.name}</h3>
                   </div>
 
                   <ul className={styles.features}>

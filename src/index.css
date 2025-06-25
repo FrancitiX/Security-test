@@ -30,6 +30,10 @@ body {
   margin-top: 210px;
 }
 
+.mt_Nav {
+  margin-top: 100px;
+}
+
 .container {
   padding: 0 100px;
   min-height: 30vh;

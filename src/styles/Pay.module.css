@@ -1,5 +1,4 @@
 .main {
-    margin-top: 10px;
     background-color: var(--bgColor);
     min-height: 100dvh;
 }
@@ -53,7 +52,7 @@
 }
 
 .productContainer {
-    margin-top: 50px;
+    /* margin-top: 10px; */
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -61,11 +60,13 @@
 }
 
 .features {
-    margin-top: 30px;
+    margin: 0;
 }
 
 .productImageContainer {
+    margin: 0px;
     width: 20%;
+    min-width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,9 +79,21 @@
     border-radius: 8px;
 }
 
-
 .payContainer .resume {
     width: 30%;
+}
+
+.horizontal {
+    width: 100%;
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product {
+    margin: 0;
+    padding: 0%;
 }
 
 .horizontalLine {

@@ -1,0 +1,37 @@
+.filter {
+  top: 110px;
+  position: fixed;
+  padding: 0px;
+  width: 250px;
+  min-width: 250px;
+  min-width: 50px;
+  border: 1px solid var(--text);
+  box-shadow: 0 0 5px var(--shadow);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.filter h3 {
+  margin: auto 20px;
+}
+
+.filter_section {
+    padding: 2px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.title {
+    margin: 0 5px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.priceInputs {
+    
+}
+
+.filter button {
+  width: 100%;
+  padding: 20px;
+}
